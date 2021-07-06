@@ -15,9 +15,9 @@ export class CartService {
   getCartProducts(){
    
 
-return  this.productlist.asObservable();;
 
- 
+
+ return this.productlist.asObservable();
   }
 
   // setCartProducts(prod: any){
@@ -30,10 +30,15 @@ this.cartitems.push(prod);
 this.unique_array = Array.from(new Set(this.cartitems))
 this.productlist.next(this.unique_array);
 
-var retrievedData: any = localStorage.getItem("arr");
-localStorage.setItem("arr", JSON.stringify(retrievedData));
+
+
+
+// localStorage.setItem("arr", JSON.stringify());
+// var retrievedData: any = localStorage.getItem("arr");
 // var movies2 = JSON.parse(retrievedData);
 // console.log(movies2);
+
+
 
 
 
@@ -52,11 +57,13 @@ this.getTotalPrice();
 
 
   removeCartItem(prod: any){
-    this.cartitems.map((a: any, index: any)=>{
-      if(prod.id === a.id){
-        this.cartitems.splice(index,1);
-      }
-    })
+    // this.cartitems.map((a: any, index: any)=>{
+    //   if(prod.id === a.id){
+    //     this.cartitems.splice(index,1);
+    //   }
+    // })
+
+    // this.cartitems.splice(index,1);
   }
 
  
