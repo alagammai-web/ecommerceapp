@@ -64,7 +64,7 @@ this.getTotalPrice();
     // })
 
     // this.cartitems.splice(index,1);
-
+alert("sdsdsd");
     // bhh
   }
 
